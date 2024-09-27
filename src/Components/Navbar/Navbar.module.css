@@ -1,0 +1,82 @@
+.nav {
+  color: white;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10%;
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    font-size: 2vh;
+  }
+  .nav .logo {
+    height: 50%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .nav {
+    font-size: 2.5vh;
+  }
+  .nav .logo {
+    height: 75%;
+  }
+}
+
+@media (min-width: 1001px) {
+  .nav {
+    font-size: 2.8vh;
+  }
+  .nav .logo {
+    height: 100%;
+  }
+}
+
+.nav .logoContainer {
+  width: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.nav .logo {
+  object-fit: cover;
+}
+
+/* Estilo inicial */
+/* Estilo inicial */
+.nav .item {
+  position: relative; /* Adiciona esta linha */
+}
+
+.nav .item::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #00c46a;
+  transition: width 0.3s ease;
+  position: absolute; /* Certifique-se de que está definido como absoluto */
+  bottom: 0;
+  left: 0;
+}
+
+/* Estilo no hover */
+.nav .item:hover::after {
+  width: 100%;
+}
