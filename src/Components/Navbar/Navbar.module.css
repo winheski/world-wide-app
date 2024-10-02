@@ -80,3 +80,7 @@
 .nav .item:hover::after {
   width: 100%;
 }
+
+.nav :global(.active) {
+  color: #00c46a;
+}

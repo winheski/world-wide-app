@@ -1,23 +1,40 @@
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
-import Button from "../Reusable/Button/Button";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
       <nav className={styles.nav}>
-        <Link to={"/"} className={styles.logoContainer}>
+        <NavLink
+          to={"/"}
+          className={styles.logoContainer}
+          activeClassName={styles.active}
+        >
           <img src="/icon.png" alt="Logo" className={styles.logo} />
           <span>WorldWide</span>
-        </Link>
+        </NavLink>
 
         <ul>
-          <Link to={"/Pricing"} className={styles.item}>
+          <NavLink
+            to={"/Pricing"}
+            className={styles.item}
+            activeClassName={styles.active}
+          >
             Pricing
-          </Link>
-          <Link to={"/Product"} className={styles.item}>
+          </NavLink>
+          <NavLink
+            to={"/Product"}
+            className={styles.item}
+            activeClassName={styles.active}
+          >
             Product
-          </Link>
-          <Button url={"/Login"} text={"Login"} />
+          </NavLink>
+          <NavLink
+            to={"/Login"}
+            className={styles.item}
+            activeClassName={styles.active}
+          >
+            Login
+          </NavLink>
         </ul>
       </nav>
     </>
