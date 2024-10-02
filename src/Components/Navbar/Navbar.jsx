@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-
+import Button from "../Reusable/Button/Button";
 export default function Navbar() {
   return (
     <>
@@ -17,9 +17,7 @@ export default function Navbar() {
           <Link to={"/Product"} className={styles.item}>
             Product
           </Link>
-          <Link to={"/Login"} className={styles.item}>
-            Login
-          </Link>
+          <Button url={"/Login"} text={"Login"} />
         </ul>
       </nav>
     </>
