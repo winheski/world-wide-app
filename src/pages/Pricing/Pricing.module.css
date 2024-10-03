@@ -16,6 +16,7 @@
   height: 90%;
   display: flex;
   flex-direction: row;
+  gap: 5%;
 }
 
 .Pricing main div {
@@ -24,10 +25,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-}
-
-.Pricing main p {
-  text-wrap: ;
 }
 
 @media (max-width: 500px) {
@@ -69,12 +66,12 @@
 }
 
 .Pricing .container {
-  width: 40%;
+  width: 47.5%;
   height: 100%;
 }
 
 .Pricing .imageContainer {
-  width: 60%;
+  width: 47.5%;
   height: 100%;
   display: flex;
   justify-content: center;

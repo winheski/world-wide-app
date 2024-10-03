@@ -1,0 +1,12 @@
+{
+  "cities": [
+    {
+      "name": "Madrid",
+      "coutry": "Spain"
+    },
+    {
+      "name": "Frankfurt",
+      "coutry": "Germany"
+    }
+  ]
+}
