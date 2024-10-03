@@ -16,52 +16,18 @@
   width: 50%;
 }
 
-@media (max-width: 500px) {
-  .nav {
-    font-size: 2vh;
-  }
-  .nav .logo {
-    height: 50%;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 1000px) {
-  .nav {
-    font-size: 2.5vh;
-  }
-  .nav .logo {
-    height: 75%;
-  }
-}
-
-@media (min-width: 1001px) {
-  .nav {
-    font-size: 2.8vh;
-  }
-  .nav .logo {
-    height: 100%;
-  }
-}
-
 .nav .logoContainer {
   width: auto;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  gap: 5%;
-  max-height: 100%;
-  max-width: 100%;
+  width: 25%;
 }
 
 .nav .logo {
   object-fit: cover;
 }
 
-/* Estilo inicial */
-/* Estilo inicial */
 .nav .item {
-  position: relative; /* Adiciona esta linha */
+  position: relative;
 }
 
 .nav .item::after {
@@ -81,6 +47,6 @@
   width: 100%;
 }
 
-.nav :global(.active) {
+.nav ul :global(.active) {
   color: #00c46a;
 }
