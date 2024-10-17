@@ -5,6 +5,8 @@ import Product from "./pages/Product/Product";
 import Login from "./pages/Login/Login";
 import AppPage from "./pages/AppPage/AppPage";
 import CitiesMenu from "./Components/CitiesMenu/CitiesMenu";
+import CityList from "./Components/CitiesList/CityList";
+import CountryList from "./Components/CountryList/CountryList";
 
 export default function App() {
   return (
@@ -17,8 +19,8 @@ export default function App() {
         <Route path="login" element={<Login />} />
         <Route path="appPage" element={<AppPage />}>
           <Route index element={<CitiesMenu />} />
-          <Route path="cities" element={<CitiesMenu />} />
-          <Route path="countries" element={<CitiesMenu />} />
+          <Route path="cities" element={<CityList />} />
+          <Route path="countries" element={<CountryList />} />
         </Route>
       </Routes>
     </BrowserRouter>
