@@ -5,25 +5,27 @@ export default function Navbar() {
   return (
     <>
       <nav className={styles.nav}>
-        <div className={styles.logoContainer}><Logo /></div>
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
 
         <ul>
           <NavLink
-            to={"/Pricing"}
+            to={"/pricing"}
             className={styles.item}
             activeClassName={styles.active}
           >
             Pricing
           </NavLink>
           <NavLink
-            to={"/Product"}
+            to={"/product"}
             className={styles.item}
             activeClassName={styles.active}
           >
             Product
           </NavLink>
           <NavLink
-            to={"/Login"}
+            to={"/login"}
             className={styles.item}
             activeClassName={styles.active}
           >

@@ -17,7 +17,7 @@ export default function Homepage() {
               think of. Never forget your wonderful<br></br> experiences, and
               show your friends how you have wandered the world.
             </h2>
-            <Button url={"/AppPage"} text="START TRACKING NOW" />
+            <Button url={"AppPage"} text="START TRACKING NOW" />
           </section>
         </main>
       </div>
