@@ -1,31 +1,16 @@
-import { useState } from "react";
 import styles from "./CityList.module.css";
-import { useEffect } from "react";
-export default function CityList() {
-  const [loading, setLoading] = useState(true);
-  const [cities, setCities] = useState([]);
-  useEffect(() => {
-    try {
-      fetch("http://localhost:9000/cities")
-        .then((res) => res.json())
-        .then((data) => setCities(data));
-    } catch (e) {
-      console.log(e.message);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
 
-  function dateFormatter(date) {
-    const data = new Date(date);
-    const options = {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    };
-    return `(${data.toLocaleDateString("en-US", options)})`;
-  }
+function dateFormatter(date) {
+  const data = new Date(date);
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return `(${data.toLocaleDateString("en-US", options)})`;
+}
+export default function CityList({ cities, isLoading }) {
   return (
     <>
       <section className={styles.citylist}>
